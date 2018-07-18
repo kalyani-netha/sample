@@ -1,0 +1,28 @@
+java -version
+sudo yum list | grep java-1.8
+sudo yum install java-1.8.0-openjdk-devel -y(development version..it has both compiler and virtual machine..as we r going to built java based app..so we need compiler and jenkins need run tym)
+
+sudo update-alternatives --config java(update configuration and make java 8 as default version)
+2
+
+open jenkins.io
+sudo wget(got repo file in local)
+sudo 
+sudo yum install jenkins
+y
+start jenkins server
+sudo service jenkins start
+default jenkins starts in 8080 port no
+take public ip:8080
+
+unlock jenkins
+grab pswd
+cat pswd(only once)
+
+customize jenkins
+install plugins(install suggested plugins)
+save and finish
+
+to start jenkins automatically on systm reboot
+sudo chkconfig jenkins on
+when vm reboots jenkins autosatrts
